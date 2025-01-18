@@ -3,7 +3,7 @@ import { Input } from '@/components/ui/input'
 import { useAuthStore } from '@/utils/store/Auth'
 import { Label } from '@radix-ui/react-label'
 import { IconBrandGithub, IconBrandGoogle } from '@tabler/icons-react'
-import { Link } from 'lucide-react'
+import Link from 'next/link'
 import { cn } from "@/lib/utils";
 import React from 'react'
 

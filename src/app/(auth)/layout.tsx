@@ -1,6 +1,6 @@
 "use client"
 import { useAuthStore } from "@/utils/store/Auth";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 export default function Layout({children}: {children: React.ReactNode}) {
@@ -13,7 +13,7 @@ export default function Layout({children}: {children: React.ReactNode}) {
           }
      }, [session, router])
 
-     if(session) {
+     if(!session) {
           return null
      }
 
