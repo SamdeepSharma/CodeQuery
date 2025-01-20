@@ -56,7 +56,7 @@ const HeroSectionHeader = () => {
                 <div className="flex items-center justify-center">
                     <div className="space-y-4 text-center">
                         <h1 className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-center text-7xl font-bold leading-none tracking-tighter text-transparent">
-                            RiverFlow
+                            CodeQuery
                         </h1>
                         <p className="text-center text-xl font-bold leading-none tracking-tighter">
                             Ask questions, share knowledge, and collaborate with developers
