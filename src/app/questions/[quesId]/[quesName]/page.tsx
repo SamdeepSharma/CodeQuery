@@ -32,7 +32,7 @@ interface PageProps {
     };
 }
 
-const Page = async ({ params }: PageProps) => {
+const Page = async ({ params }: PageProps): Promise<React.ReactNode> => {
     const [question, answers, upvotes, downvotes, comments] = await Promise.all([
         databases.getDocument(db, questionCollection, params.quesId),
         databases.listDocuments(db, answerCollection, [
