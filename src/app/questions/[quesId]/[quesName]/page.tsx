@@ -25,7 +25,14 @@ import DeleteQuestion from "./DeleteQuestion";
 import EditQuestion from "./EditQuestion";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 
-const Page = async ({ params }: { params: { quesId: string; quesName: string } }) => {
+interface PageProps {
+    params: {
+        quesId: string;
+        quesName: string;
+    };
+}
+
+const Page = async ({ params }: PageProps) => {
     const [question, answers, upvotes, downvotes, comments] = await Promise.all([
         databases.getDocument(db, questionCollection, params.quesId),
         databases.listDocuments(db, answerCollection, [
